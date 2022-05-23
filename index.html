@@ -53,6 +53,18 @@
                     }
                 }
                 console.log(total);
+
+                 const numberList = [1, 2, 5, 10];
+                    console.log('this is working');
+                    const answerNumber = 7;
+
+                    for (let i = 0; i < numberList.length; i++) {
+                        for (let a = 0; a < numberList.length; a++) {
+                            if (((numberList[i] + numberList[a]) == answerNumber) && (a != i)) {
+                                console.log(`${numberList[i]} and ${numberList[a]}`);
+                            }
+                        }
+                    }
                 
     </script>
 </body>
