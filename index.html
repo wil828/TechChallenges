@@ -76,7 +76,6 @@
             // For example, if our input was[1, 2, 3, 4, 5], the expected output would be[120, 60, 40, 30, 24].If our input was[3, 2, 1], the expected output would be[2, 3, 6].
     
             // Follow - up: what if you can't use division?
-            const input = [3, 2, 1];
             let answerArray = [];
     
             for (let i = 0; i < input.length; i++) {
@@ -159,6 +158,22 @@
                 }
             }
             return highestProduct
+
+        }
+
+        function checkPalindrome(inputString) {
+            let lowString = inputString.toLowerCase();
+            let reverseWord = lowString.split('').reverse().join('');
+            
+            return lowString === reverseWord
+        }
+
+        function polygon(n) {
+            if ((n >= 10 ** 4) || (n < 1)) {
+                return False
+            } else {
+                return (n ** 2 + (n - 1) ** 2)
+            }
 
         }
 
